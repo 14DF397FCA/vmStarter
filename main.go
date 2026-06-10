@@ -17,10 +17,10 @@ func main() {
 
 	log.Debugln(conf.Print())
 
-	log.Infof("Start checking %d VMs", len(conf.vmList))
 	if len(conf.vmList) == 0 {
 		log.Fatalln("No VM list to checking")
 	}
+	log.Infof("Start checking %d VMs", len(conf.vmList))
 
 	auth = ParseAuthData()
 
